@@ -1,0 +1,536 @@
+@media (max-width: 320px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        background-image: url(./img/backround.webp);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    section {
+        background-color: black;
+        color: white;
+        width: 275px;
+        margin-left: 22.5px;
+    }
+
+    h1 {
+        font-family: 800;
+        font-size: 44px;
+        line-height: 100%;
+        letter-spacing: 30%;
+        text-align: center;
+        color: #FD7D54;
+    }
+
+    .p {
+        text-align: center;
+    }
+
+    .cirkcle {
+        width: 67px;
+        height: 67px;
+    }
+
+    header {
+        background-color: black;
+        padding-top: 5px;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .cozy-nav {
+        background-color: black;
+        padding: 15px 25px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+    }
+
+    #coffee-clicker {
+        display: none;
+    }
+
+    .menu-list {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .menu-list a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .burger-icon {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 16px;
+    }
+
+    .line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .cozy-nav {
+        justify-content: space-between;
+        min-height: 55px;
+    }
+
+    .burger-icon {
+        display: flex;
+        z-index: 25;
+    }
+
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        border-radius: 12px;
+        padding: 60px 0 15px 0;
+        gap: 0;
+        z-index: 20;
+    }
+
+    .menu-list li {
+        width: 100%;
+    }
+
+    .menu-list a {
+        display: block;
+        padding: 15px 25px;
+        border-bottom: 1px solid white;
+    }
+
+
+    #coffee-clicker:checked~.menu-list {
+        display: flex;
+    }
+
+    #coffee-clicker:checked+.burger-icon .line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    #coffee-clicker:checked+.burger-icon .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    #coffee-clicker:checked+.burger-icon .line:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .logo {
+        width: 86px;
+        height: 56px;
+    }
+
+    a {
+        color: white;
+    }
+
+    .card {
+        border: 2px solid #FFFFFF;
+        max-width: 293px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
+
+    .border {
+        border: 2px solid #FFFFFF;
+        width: 23px;
+        height: 0px;
+    }
+
+    .card-text {
+        display: flex;
+        justify-content: center;
+        max-width: 227px;
+        text-align: center;
+    }
+
+    .card-title{
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 23px;
+        font-weight: 800px;
+    }
+
+    .card-footer--text{
+        color: #41C3F6;
+        text-transform: uppercase;
+    }
+    
+    .footer-text{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        height: 440px;
+        width: 100%;
+        max-width: 630px;
+        background-color: rgb(0, 0, 0);
+        margin: auto 0;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    header {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+
+    .p{
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .Logo {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 9px;
+        line-height: 100%;
+        letter-spacing: 10%;
+        font-weight: 800;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        color: #FD7D54;
+        text-transform: lowercase;
+        display: flex;
+        font-weight: 800;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+        margin-bottom: 0;
+        font-style: bold;
+        font-size: 35px;
+        line-height: 100%;
+        letter-spacing: 20%;
+    }
+
+    .main-title-2 {
+        font-family: "Montserrat", sans-serif;
+        color: #ffffff;
+        display: flex;
+        font-weight: 500;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        font-style: bold;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 3%;
+    }
+
+    .card-title {
+        position: relative;
+        display: inline-block;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-style: bold;
+        font-size: 13px;
+        line-height: 100%;
+        letter-spacing: 20%;
+        margin-top: 20px;
+    }
+
+    .card-footer--text {
+        color: #41C3F6;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: bold;
+        font-size: 9px;
+        line-height: 100%;
+        letter-spacing: 20%;
+        margin-top: 15px;
+    }
+
+    .card-text {
+        width: 140px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        text-transform: lowercase;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 7%;
+        margin-top: 15px;
+    }
+
+    .card-title::after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 2px;
+        background-color: white;
+        bottom: -11px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .card {
+        padding: 0;
+        width: 170px;
+        height: 265px;
+        background-color: none;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+        margin-top: 10px;
+    }
+
+    .container-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    footer {
+        height: 35px;
+        width: 100%;
+        background-color: black;
+    }
+
+    .footer-text {
+        color: white;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 17px;
+        letter-spacing: 7%;
+        margin-top: 10px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(./img/backround.webp);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background-color: black;
+        padding: 10px;
+    }
+
+    .one {
+        display: flex;
+        gap: 250px;
+    }
+
+
+    ul {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-size: 19px;
+        font-weight: 800;
+    }
+
+    .logo {
+        width: 86px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    main {
+        background-image: url(./img/backround.webp);
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    p {
+        color: #FFFFFF;
+    }
+
+    .p {
+        display: flex;
+        justify-content: center;
+        font-weight: 600px;
+        font-size: 20px;
+    }
+
+    h1 {
+        color: #fd7d54;
+        display: flex;
+        justify-content: center;
+        font-weight: 800px;
+        font-size: 64px;
+    }
+
+    section {
+        background-color: black;
+        width: 80%;
+        margin: 50px;
+    }
+
+    .container-card {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin: 80px 0px 80px 0px;
+    }
+
+    .card {
+        border: 2px solid #FFFFFF;
+        max-width: 293px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    h2 {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 27px;
+        font-weight: 800px;
+    }
+
+    .border {
+        border: 2px solid #FFFFFF;
+        width: 23px;
+        height: 0px;
+    }
+
+    .card-text {
+        display: flex;
+        justify-content: center;
+        max-width: 227px;
+        text-align: center;
+    }
+
+    h3 {
+        color: #41C3F6;
+        text-transform: uppercase;
+    }
+
+    footer {
+        background-color: black;
+        color: #FFFFFF;
+        margin: 0px;
+        padding: 15px;
+    }
+
+    .footer-text {
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .cirkcle {
+        width: 137px;
+        height: 137px;
+    }
+}
